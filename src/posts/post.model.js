@@ -5,15 +5,17 @@ const PostSchema = new mongoose.Schema({
         type: String,
         required: [true, "El Titulo Es Obligatorio"]
     },
-    category: {
-        type: String,
-        required: [true, "La Categoria Es Obligatoria"]
+    category: {  
+        type: mongoose.Schema.Types.ObjectId, 
+        ref: 'Category',  
+        required: true 
     },
     content: {
         type: String,
         required: [true, "El Contenido Es Obligatorio"]
     },
-    keeper: { type: mongoose.Schema.Types.ObjectId, 
+    keeper: { 
+        type: mongoose.Schema.Types.ObjectId, 
         ref: 'User', 
         required: true },
     status: {

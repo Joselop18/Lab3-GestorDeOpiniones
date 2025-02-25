@@ -1,0 +1,19 @@
+[{
+  "_id": {
+    "$oid": "67bb62c44ed370ec07e4b6b6"
+  },
+  "content": "Hola Como Estas",
+  "keeperUser": {
+    "$oid": "67b6498ae9b3333dd21647e0"
+  },
+  "keeperPost": {
+    "$oid": "67bb5ef5edb5ffff1515b2fb"
+  },
+  "status": true,
+  "createdAt": {
+    "$date": "2025-02-23T18:02:44.400Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-23T18:02:44.400Z"
+  }
+}]

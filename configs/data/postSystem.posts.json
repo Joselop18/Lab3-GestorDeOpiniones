@@ -1,0 +1,20 @@
+[{
+  "_id": {
+    "$oid": "67bb5ef5edb5ffff1515b2fb"
+  },
+  "title": "Hola",
+  "category": {
+    "$oid": "67bb63424ed370ec07e4b6c4"
+  },
+  "content": "Hola que tal chavalos de internet como estan",
+  "keeper": {
+    "$oid": "67b6498ae9b3333dd21647e0"
+  },
+  "status": true,
+  "createdAt": {
+    "$date": "2025-02-23T17:46:29.267Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-23T18:06:19.554Z"
+  }
+}]
