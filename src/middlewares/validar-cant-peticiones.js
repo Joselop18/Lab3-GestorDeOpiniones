@@ -5,7 +5,7 @@ const limiter = rateLimit({
     max: 100,
     message:{
         succes: false,
-        msg: "Demasiadas Peticiones Desde Esta IP, intente despues de 15 minutos"
+        msg: "Demasiadas peticiones, intente despues de 15 minutos"
     }
 })
 

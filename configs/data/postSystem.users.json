@@ -1,13 +1,39 @@
 [{
   "_id": {
-    "$oid": "67bb5a90440fbfc27708aab7"
+    "$oid": "67be350133ac4497ecce062f"
   },
   "name": "Admin",
   "surname": "Principal",
   "username": "admin",
   "email": "admin@gmail.com",
-  "password": "$argon2id$v=19$m=65536,t=3,p=4$HXHFBLMWXWTi4cFrGYyMBw$zJ7Pe87ZZV7ehkB68CG1yubGElPjJvxX9nbmmBMlOh8",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$Oa47N7iNWtZlGo1mNjUYgg$/rgeqq6/lIhY5q71eQFe5qzvds9Ot2QQUo+N9S+XO3Y",
   "role": "ADMIN_ROLE",
+  "estado": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67be350833ac4497ecce0632"
+  },
+  "name": "Jose",
+  "surname": "López",
+  "username": "jlópez",
+  "email": "jlopez@gmail.com",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$DoruC8TdM12Cmkl3RLSKjg$3mDcL6TV0mBCGmCkCtqRX8XUe7XC3gYihmZ9KpY8Va8",
+  "role": "USER_ROLE",
+  "estado": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67be36cc4a642f294ba3998a"
+  },
+  "name": "Rosas",
+  "surname": "Araujo",
+  "username": "crosas",
+  "email": "crosas@gmail.com",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$mDoxQYF9WHTH8ejMXQtUFw$Bw3Rv1wTt9YAIIlUBGd2h+opqcRq+RX7KyulYEU6ggY",
+  "role": "USER_ROLE",
   "estado": true,
   "__v": 0
 },
@@ -15,10 +41,10 @@
   "_id": {
     "$oid": "67b6498ae9b3333dd21647e0"
   },
-  "name": "Pichiya",
-  "surname": "panadero",
-  "username": "lpichiya",
-  "email": "lpichiya@gmail.com",
+  "name": "Alavares",
+  "surname": "Aguilar",
+  "username": "aajonas",
+  "email": "aajonas@gmail.com",
   "password": "$argon2id$v=19$m=65536,t=3,p=4$/awJCiPVGy2Tu58stibksw$DnGgZ5Z7mUICOUFC+zfMZ8cZex1MNcVWVb2RGwcr8vU",
   "role": "USER_ROLE",
   "estado": true,
@@ -26,13 +52,13 @@
 },
 {
   "_id": {
-    "$oid": "67b65f7fa30386fe783d00c6"
+    "$oid": "67be38757f3b6e582cc05a2a"
   },
   "name": "Anderson",
   "surname": "Chino",
   "username": "alopez",
   "email": "alopez@gmail.com",
-  "password": "$argon2id$v=19$m=65536,t=3,p=4$DBxUrGf02YI47+cH71+0pQ$hhIvP76JJYQEf4c0WPVoKQ22Z+7A69WB9iU7HjnaPwE",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$KUxJ5wGXQf0JgUFOZCNNxQ$azrFHwpYnLDFuKH2+Xui5tOt4K3q6RjSWfIiuOwoooo",
   "role": "USER_ROLE",
   "estado": true,
   "__v": 0

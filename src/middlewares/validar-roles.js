@@ -3,7 +3,7 @@ export const validarRol = (...roles) => {
         if (!req.usuario) {
             return res.status(500).json({
                 success: false,
-                msg: "Se quiere verificar un Role Sin Validar El Token Antes"
+                msg: "Valide el token antes de verificar el Role"
             });
         }
 
@@ -12,7 +12,7 @@ export const validarRol = (...roles) => {
         if (!roles.includes(role)) {
             return res.status(403).json({
                 success: false,
-                msg: `Usuario No Autorizado, Posee Un Rol ${req.usuario.role}, los roles autorizados son ${roles}`
+                msg: `Usuario no autorizado, Posee el Rol de ${req.usuario.role}, y los roles autorizados son ${roles}`
             });
         }
 

@@ -13,7 +13,7 @@ router.get("/", getUsers);
 router.get(
     "/findUser/:id",
     [
-        check("id", "No es un ID Valido").isMongoId(),
+        check("id", "Id invalido").isMongoId(),
         check("id").custom(existeUsuarioById),
         validarCampos
     ],
@@ -24,7 +24,7 @@ router.put(
         "/:id",
         [
             validarJWT,
-            check("id", "No es un ID Válido").isMongoId(),
+            check("id", "Id invalido").isMongoId(),
             check("id").custom(existeUsuarioById),
             validarCampos
         ],

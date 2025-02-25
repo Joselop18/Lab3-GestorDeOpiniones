@@ -3,7 +3,7 @@ import mongoose from "mongoose";
 const PostSchema = new mongoose.Schema({
     title: {
         type: String,
-        required: [true, "El Titulo Es Obligatorio"]
+        required: [true, "El titulo es obligatorio"]
     },
     category: {  
         type: mongoose.Schema.Types.ObjectId, 
@@ -12,7 +12,7 @@ const PostSchema = new mongoose.Schema({
     },
     content: {
         type: String,
-        required: [true, "El Contenido Es Obligatorio"]
+        required: [true, "El contenido es obligatorio"]
     },
     keeper: { 
         type: mongoose.Schema.Types.ObjectId, 

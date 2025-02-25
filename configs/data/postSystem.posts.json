@@ -2,11 +2,11 @@
   "_id": {
     "$oid": "67bb5ef5edb5ffff1515b2fb"
   },
-  "title": "Hola",
+  "title": "Saludos",
   "category": {
     "$oid": "67bb63424ed370ec07e4b6c4"
   },
-  "content": "Hola que tal chavalos de internet como estan",
+  "content": "Saludos cordiales para todos",
   "keeper": {
     "$oid": "67b6498ae9b3333dd21647e0"
   },
@@ -16,5 +16,10 @@
   },
   "updatedAt": {
     "$date": "2025-02-23T18:06:19.554Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67be376488bfa08e3e8c3515"
   }
 }]

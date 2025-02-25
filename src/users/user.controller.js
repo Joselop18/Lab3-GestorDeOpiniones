@@ -23,7 +23,7 @@ export const getUsers = async (req = request, res = response) => {
     } catch (error) {
         res.status(500).json({
             success: false,
-            message: "Error Al Obtener Usuario",
+            message: "No se pude obtener el usuario",
             error
         });
     }
@@ -36,7 +36,7 @@ export const getUserById = async (req, res) => {
         if (!user) {
             return res.status(404).json({
                 success: false,
-                msg: "Usuario Not Found"
+                msg: "No se encontro el usuario"
             });
         }
 
@@ -47,7 +47,7 @@ export const getUserById = async (req, res) => {
     } catch (error) {
         res.status(500).json({
             success: false,
-            msg: "Error Al Obtener Usuario",
+            msg: "No se puede obtener el usuario",
             error
         });
     }
@@ -74,20 +74,20 @@ export const updateUser = async (req, res = response) => {
         if (!user) {
             return res.status(404).json({
                 success: false,
-                msg: "Usuario no encontrado"
+                msg: "No se puedo encontrar el usuario"
             });
         }
 
         res.status(200).json({
             success: true,
-            msg: "Usuario Actualizado!",
+            msg: "Usuario regenerado",
             user
         });
 
     } catch (error) {
         res.status(500).json({
             success: false,
-            msg: "Error Al Actualizar Usuario",
+            msg: "No se puede actualizar el usuario",
             error
         });
     }

@@ -10,7 +10,7 @@ export const savePost = async (req, res) => {
         if (!user) {
             return res.status(400).json({
                 success: false,
-                message: "Usuario No Encontrado"
+                message: "No se encontro el Usuario"
             });
         }
 
@@ -18,7 +18,7 @@ export const savePost = async (req, res) => {
         if (!categoryExists) {
             return res.status(400).json({
                 success: false,
-                message: "Categoría no válida"
+                message: "La categoria no es valida"
             });
         }
 
@@ -34,7 +34,7 @@ export const savePost = async (req, res) => {
 
         res.status(200).json({
             success: true,
-            message: "Publicación Creada",
+            message: "Publicación creada",
             post
         });
     } catch (error) {
@@ -86,7 +86,7 @@ export const searchPost = async (req, res) => {
         if (!post) {
             return res.status(404).json({
                 success: false,
-                message: "Publicación No Encontrada"
+                message: "No se encontro la Publicacion"
             });
         }
 
@@ -112,7 +112,7 @@ export const deletePost = async(req, res) => {
         if (!post) {
             return res.status(404).json({
                 success: false,
-                msg: "Publicación No Encontrada"
+                msg: "No se encontro la publicacion"
             });
         }
 
@@ -128,7 +128,7 @@ export const deletePost = async(req, res) => {
 
         res.status(200).json({
             success: true,
-            message: "Publicación Eliminada Exitosamente"
+            message: "Publicación eliminada exitosamente"
         });
     } catch (error) {
         console.error(error);
@@ -148,7 +148,7 @@ export const updatePost = async (req, res) => {
         if (!req.usuario) {
             return res.status(401).json({
                 success: false,
-                message: "Usuario no autenticado"
+                message: "El usuario no esta autenticado"
             });
         }
 
@@ -157,7 +157,7 @@ export const updatePost = async (req, res) => {
         if (!post) {
             return res.status(404).json({
                 success: false,
-                message: "Publicación No Encontrada"
+                message: "No se encontro la publicacion"
             });
         }
 
@@ -173,7 +173,7 @@ export const updatePost = async (req, res) => {
             if (!categoryExists) {
                 return res.status(400).json({
                     success: false,
-                    message: "Categoría no válida"
+                    message: "La categoria no es valido"
                 });
             }
             post.category = category;
@@ -184,7 +184,7 @@ export const updatePost = async (req, res) => {
 
         res.status(200).json({
             success: true,
-            msg: "Publicación Actualizada!",
+            msg: "Publicación regenerado",
             post
         });
 

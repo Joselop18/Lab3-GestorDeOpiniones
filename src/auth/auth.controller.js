@@ -15,27 +15,27 @@ export const login = async (req, res) => {
 
         if(!user){
             return res.status(400).json({
-                msg: "Credenciales Incorrectas, Correo No Existente En La Data Base"
+                msg: "Informarcion personal incorrecto"
             });
         }
 
         if(!user.estado){
             return res.status(400).json({
-                msg: "El Usuario No Existe En La Base De Datos"
+                msg: "Usuario no existe en base de datos"
             }); 
         }
 
         const validPassword = await verify(user.password, password);
         if(!validPassword){
             return res.status(400).json({
-                msg: "La Contraseña Es Incorrecta"
+                msg: "Contraseña Incorrecta"
             })
         }
 
         const token = await generarJWT(user.id);
         
         res.status(200).json({
-            msg: "Inicio De Sesion Exitoso!",
+            msg: "Inicio Sesion Excelente!",
             userDetails: {
                 username: user.username,
                 token: token
@@ -59,7 +59,7 @@ export const register  = async (req, res) => {
         if (data.role === "ADMIN_ROLE") {
             return res.status(403).json({
                 success: false,
-                message: "No tienes permisos para registrarte como administrador"
+                message: "Permiso no validos para registrarte como administrador"
             });
         }
 

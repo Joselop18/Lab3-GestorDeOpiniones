@@ -3,7 +3,7 @@ import mongoose from "mongoose";
 const CategorySchema = new mongoose.Schema({
     name: {
         type: String,
-        required: [true, "El Nombre De La Categoría Es Obligatorio"],
+        required: [true, "Nombre obligatorio para la categoria"],
         unique: true
     },
     status: {

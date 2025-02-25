@@ -38,12 +38,12 @@ const initializeCategories = async () => {
         const defaultCategory = await Category.findOne({ name: "General" });
         if (!defaultCategory) {
             await Category.create({ name: "General" });
-            console.log("Categoría por defecto creada: General");
+            console.log("Categoría por defecto creada: Todos");
         } else {
-            console.log("Categoría por defecto ya existente");
+            console.log("Categoría ya existe por defecto");
         }
     } catch (error) {
-        console.error("Error al inicializar categorías:", error);
+        console.error("Error al iniciar categorías:", error);
     }
 };
 

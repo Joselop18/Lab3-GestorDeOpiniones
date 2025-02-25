@@ -3,17 +3,17 @@ import { validarCampos } from './validar-campos.js';
 import { existenteEmail } from '../helpers/db-validator.js';
  
 export const registerValidator = [
-    body('name', 'the name is required').not().isEmpty(),
-    body('surname', "the surname is required").not().isEmpty(),
-    body('email', "You must enter a valid email").isEmail(),
+    body('name', 'El nombre es requerido').not().isEmpty(),
+    body('surname', "El segundo nombre es requerido").not().isEmpty(),
+    body('email', "Agregue un email valido").isEmail(),
     body("email").custom(existenteEmail),
-    body("password", "Password must be at least 6 characters").isLength({min: 6}),
+    body("password", "La contraseña debe contener como minimo 6 caracterizticas").isLength({min: 6}),
     validarCampos
 ]
  
 export const loginValidator = [
-    body("email").optional().isEmail().withMessage("Enter a valid email address"),
-    body ("username").optional().isString().withMessage("Enter a valid username"),
-    body("password", "Password must be at least 6 characters").isLength({min: 6}),
+    body("email").optional().isEmail().withMessage("Ingrese un email valido"),
+    body ("username").optional().isString().withMessage("Ingrese un usuario valido"),
+    body("password", "Ingrese contraseña que contenga como minimo 6 caracterizticas").isLength({min: 6}),
     validarCampos
 ]

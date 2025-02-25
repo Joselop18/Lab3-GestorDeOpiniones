@@ -11,7 +11,7 @@ router.post(
     [
         validarJWT,
         check("title", "El título es obligatorio").not().isEmpty(),
-        check("category", "La categoría es obligatoria").not().isEmpty(),
+        check("category", "La categoría es obligatorio").not().isEmpty(),
         check("content", "El contenido es obligatorio").not().isEmpty(),
         validarCampos
     ],

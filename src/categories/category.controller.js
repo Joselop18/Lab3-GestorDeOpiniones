@@ -31,7 +31,7 @@ export const getCategories = async (req, res) => {
     } catch (error) {
         res.status(500).json({
             success: false,
-            message: "Error al obtener categorías",
+            message: "Error al tener categorías",
             error
         });
     }
@@ -66,7 +66,7 @@ export const deleteCategory = async (req, res) => {
         if (!defaultCategory) {
             return res.status(500).json({
                 success: false,
-                message: "No se encontró la categoría por defecto"
+                message: "No se encontró la categoría inicial"
             });
         }
 
@@ -76,7 +76,7 @@ export const deleteCategory = async (req, res) => {
 
         res.status(200).json({
             success: true,
-            message: "Categoría eliminada y publicaciones reasignadas"
+            message: "Categoría eliminada y publicaciones reescritos"
         });
     } catch (error) {
         res.status(500).json({

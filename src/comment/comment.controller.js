@@ -11,14 +11,14 @@ export const saveComment = async (req, res) => {
         if (!user) {
             return res.status(400).json({
                 success: false,
-                message: "Usuario No Encontrado"
+                message: "No se encontro este usuario"
             });
         }
 
         if (!post) {
             return res.status(400).json({
                 success: false,
-                message: "Publicacion No Encontrada"
+                message: "No se encontro la publicacion"
             });
         }
 
@@ -33,7 +33,7 @@ export const saveComment = async (req, res) => {
 
         res.status(200).json({
             success: true,
-            message: "Comentario Creado",
+            message: "Comentario creado",
             comment
         });
     } catch (error) {
@@ -59,8 +59,8 @@ export const getComments = async(req, res) => {
             const post = await Post.findById(comment.keeperPost)
             return{
                 ...comment.toObject(),
-                keeperUser: owner ? owner.nombre: "Usuario No Encontrado",
-                keeperPost: post ? post.title: "Publicacion No Encontrada"
+                keeperUser: owner ? owner.nombre: "No se encontro este usuario",
+                keeperPost: post ? post.title: "No se encontro la publicacion"
             }
         }));
         
@@ -75,7 +75,7 @@ export const getComments = async(req, res) => {
     } catch (error) {
         res.status(500).json({
             success: false,
-            message: "Error Al Obtener El Comentario",
+            message: "Error al obtener el comentario",
             error
         })
     }
@@ -90,7 +90,7 @@ export const searchComment = async (req, res) =>{
         if(!comment){
             return res.status(404).json({
                 success: false,
-                message: "Comentario No Encontrado"
+                message: "No se encontro el comentario"
             })
         }
 
@@ -100,13 +100,13 @@ export const searchComment = async (req, res) =>{
             success: true,
             comment: {
                 ...comment.toObject(),
-                keeperUser: owner ? owner.name : "Creador No Encontrado"
+                keeperUser: owner ? owner.name : "No se encontro el creador"
             }
         })
     } catch (error) {
         res.status(500).json({
             success: false,
-            message: "Error Al Buscar El Comentario",
+            message: "Error al buscar el comentario",
             error
         })
     }
@@ -128,18 +128,18 @@ export const deleteComment = async(req, res) => {
         if (!comment) {
             return res.status(404).json({
                  success: false, 
-                 msg: "Comentario No Encontrado" 
+                 msg: "No se encontro el comentario" 
             });
         }
 
         res.status(200).json({
             success: true,
-            message: "Comentario Eliminado Exitosamente"
+            message: "Se pudo eliminar el comentario"
         })
     } catch (error) {
         res.status(500).json({
             success: false,
-            message: "Error Al Eliminar El Comentario",
+            message: "Error al eliminar el comentario",
             error
         })
     }
@@ -156,7 +156,7 @@ export const updateComment = async (req, res) => {
         if (!comment) {
             return res.status(404).json({
                 success: false,
-                message: "Comentario No Encontrado"
+                message: "No se pudo encontral el comentario"
             });
         }
 
@@ -169,7 +169,7 @@ export const updateComment = async (req, res) => {
 
         res.status(200).json({
             success: true,
-            msg: "Comentario Actualizado!",
+            msg: "Comentario regenerado",
             comment
         });
         
@@ -177,7 +177,7 @@ export const updateComment = async (req, res) => {
         console.error(error);
         res.status(500).json({
             success: false,
-            msg: "Error Al Actualizar El Comentario",
+            msg: "No se pudo actualizar el comentario",
             error
         });
     }

@@ -1,9 +1,9 @@
 {
 	"info": {
-		"_postman_id": "77fe7483-85bf-4bb0-afb7-096d1bac149a",
+		"_postman_id": "5ed33cd9-b48d-4f03-ad09-c0d8400c7238",
 		"name": "Posts",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "42475632"
+		"_exporter_id": "37413652"
 	},
 	"item": [
 		{
@@ -13,7 +13,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n \r\n  \"name\": \"Anderson\",\r\n \r\n  \"surname\": \"Chino\",\r\n \r\n  \"username\": \"alopez\",\r\n \r\n  \"email\": \"alopez@gmail.com\",\r\n \r\n  \"phone\": \"12345678\",\r\n \r\n  \"password\": \"123456789\" \r\n}",
+					"raw": "{\r\n \r\n  \"name\": \"Manuel\",\r\n \r\n  \"surname\": \"Kevin\",\r\n \r\n  \"username\": \"Kev\",\r\n \r\n  \"email\": \"kreyes@gmail.com\",\r\n \r\n  \"phone\": \"12345678\",\r\n \r\n  \"password\": \"123456789\" \r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -182,7 +182,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"title\": \"Mi Primer Post\",\r\n    \"category\": \"67bb5c448fac79d3541efe15\",\r\n    \"content\": \"Hola Chicos Como Estan\"\r\n}\r\n",
+					"raw": "{\r\n    \"title\": \"Mi Primer comentario\",\r\n    \"category\": \"67bb5c448fac79d3541efe15\",\r\n    \"content\": \"holaaaa\"\r\n}\r\n",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -241,7 +241,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"title\": \"Hola\",\r\n  \"category\": \"67bb63424ed370ec07e4b6c4\",\r\n  \"content\": \"Hola que tal chavalos de internet como estan\"\r\n}",
+					"raw": "{\r\n  \"title\": \"Saludos\",\r\n  \"category\": \"67bb63424ed370ec07e4b6c4\",\r\n  \"content\": \"saludos a todos\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -394,7 +394,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"content\": \"Like Para Empezar Tutoriales\",\r\n  \"postId\": \"67b63e5e70b0fedcdac8e700\"\r\n}\r\n",
+					"raw": "{\r\n  \"content\": \"Adyudenme para empezar a crear\",\r\n  \"postId\": \"67b63e5e70b0fedcdac8e700\"\r\n}\r\n",
 					"options": {
 						"raw": {
 							"language": "json"

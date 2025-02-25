@@ -10,7 +10,7 @@ router.post(
     "/",
     [
         validarJWT,
-        check("postId", "El ID del post es obligatorio").isMongoId(),
+        check("postId", "Id de la publicacion es obligatorio").isMongoId(),
         check("content", "El contenido es obligatorio").not().isEmpty(),
         validarCampos
     ],
@@ -23,7 +23,7 @@ router.get(
     "/findComment/:id",
     [
         validarJWT,
-        check("id", "No Es Un ID Valido").isMongoId(),
+        check("id", "Id no valido").isMongoId(),
         validarCampos
     ],
     searchComment
@@ -33,7 +33,7 @@ router.put(
     "/:id",
     [
         validarJWT,
-        check("id", "No Es Un ID Valido").isMongoId(),
+        check("id", "Id no valido").isMongoId(),
         validarCampos
     ],
     updateComment
@@ -44,7 +44,7 @@ router.delete(
     "/:id",
     [
         validarJWT,
-        check("id", "No Es Un ID Valido").isMongoId(),
+        check("id", "Id no valido").isMongoId(),
         validarCampos
     ],
     deleteComment
